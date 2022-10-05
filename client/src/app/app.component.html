@@ -1,0 +1,12 @@
+<h1>{{title}}</h1>
+
+<table>
+  <tr>
+    <th>Id</th>
+    <th>Nme</th>
+  </tr>
+  <tr *ngFor="let user of users; let i = index">
+    <td [textContent]="user.id" [attr.data-cy]="'col_1_row' + (i+1)"></td>
+    <td [attr.data-cy]="'col_2_row' + (i+1)">{{user.userName}}</td>
+  </tr>
+</table>
