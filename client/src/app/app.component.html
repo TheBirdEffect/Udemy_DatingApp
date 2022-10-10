@@ -3,7 +3,7 @@
 <table>
   <tr>
     <th>Id</th>
-    <th>Nme</th>
+    <th>Name</th>
   </tr>
   <tr *ngFor="let user of users; let i = index">
     <td [textContent]="user.id" [attr.data-cy]="'col_1_row' + (i+1)"></td>
